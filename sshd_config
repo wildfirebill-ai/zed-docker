@@ -1,0 +1,14 @@
+# Zed Remote Development sshd config (drop-in, Ubuntu 24.04 openssh-server)
+Port 22
+ListenAddress 0.0.0.0
+
+# Key-based auth only
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+PubkeyAuthentication yes
+PermitRootLogin no
+UsePAM no
+
+# Keep log noise down; server logs go to container stdout via -e
+LogLevel INFO
+PrintMotd no
