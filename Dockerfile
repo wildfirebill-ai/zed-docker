@@ -7,7 +7,7 @@
 # Connect:  zed ssh://dev@localhost:2222/home/dev/workspace
 
 ARG USER=dev
-ARG UID=1000
+ARG UID=1001
 ARG SSH_PORT=22
 
 FROM ubuntu:24.04
